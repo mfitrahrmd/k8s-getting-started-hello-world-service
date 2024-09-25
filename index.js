@@ -1,15 +1,15 @@
-const express = require("express")
+const express = require("express");
 
-const PORT = process.env.APP_PORT || 3000
+const PORT = process.env.APP_PORT || 3000;
 
-const app = express()
+const app = express();
 
 app.get("/", (req, res) => {
-    res.json({
-        "message": "Hello World"
-    })
-})
+  res.json({
+    message: "Goodbye World",
+  });
+});
 
 app.listen(PORT, () => {
-    console.log(`app run on port ${PORT}`)
-})
+  console.log(`app run on port ${PORT}`);
+});
