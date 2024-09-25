@@ -16,3 +16,5 @@ steps:
         "push",
         "asia-southeast2-docker.pkg.dev/symmetric-ace-303411/k8s/hello-world:latest",
       ]
+options:
+  logging: CLOUD_LOGGING_ONLY
