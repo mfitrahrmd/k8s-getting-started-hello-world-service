@@ -10,6 +10,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.all("/:message", (req, res) => {
+  res.json({
+    message: req.params.message,
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`app run on port ${PORT}`);
 });
